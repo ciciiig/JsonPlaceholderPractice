@@ -11,7 +11,7 @@ import { UserService } from 'src/app/services/user.service';
 export class MainPageComponent implements OnInit {
   public users!: Observable<UsersData[]>;
 
-  constructor(private router: Router, public userService: UserService) {}
+  constructor(private router: Router, private userService: UserService) {}
 
   ngOnInit() {
     // call service to get users data from jsonplaceholder
@@ -19,6 +19,6 @@ export class MainPageComponent implements OnInit {
   }
 
   onNameClick(user: UsersData) {
-    this.router.navigate([`user/${user.id}`])
+    this.router.navigate([`user/${user.id}`]);
   }
 }

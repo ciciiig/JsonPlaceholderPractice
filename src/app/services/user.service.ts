@@ -21,6 +21,7 @@ export class UserService {
   }
 
   public getUserPosts(id: string | number) {
+    // get posts of specific user
     return this.http
       .get<UsersData>(`https://jsonplaceholder.typicode.com/users/${id}/posts`)
   }

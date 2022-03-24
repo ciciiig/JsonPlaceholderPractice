@@ -18,7 +18,7 @@ export class UserPageComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    // get specific user with service
+    // get specific user
     this.user = this.userService.getUser(this.route.snapshot.params['id'])
   }
 
