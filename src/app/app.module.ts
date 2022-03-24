@@ -4,10 +4,10 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { MainPageComponent } from './main-page/main-page.component';
+import { MainPageComponent } from './pages/main-page/main-page.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { UserPageComponent } from './user-page/user-page.component';
-import { UserPostsComponent } from './user-posts/user-posts.component';
+import { UserPageComponent } from './pages/user-page/user-page.component';
+import { UserPostsComponent } from './pages/user-posts/user-posts.component';
 
 @NgModule({
   declarations: [
